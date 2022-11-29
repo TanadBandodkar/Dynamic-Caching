@@ -57,6 +57,6 @@ self.addEventListener('fetch',(e) => {
                 })
             });
 //         }).catch(() => caches.match('/fallback.js').then(fetchRes =>{return fetchRes}))
-            }).catch(() => return caches.match('/fallback.js'))
+            }).catch(() => return caches.match('../fallback.html'))
     );// console.log(e)
 });
